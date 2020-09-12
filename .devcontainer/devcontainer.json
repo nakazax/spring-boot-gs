@@ -14,34 +14,28 @@
 			"NODE_VERSION": "lts/*"
 		}
 	},
-
 	// Set *default* container specific settings.json values on container create.
-	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash",
-		"java.home": "/docker-java-home"
-
-		// Added for Java coding
-		"java.format.settings.url": ".devcontainer/java-code-format-setting.xml",
+	"settings": {
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		},
 		"editor.formatOnPaste": true,
 		"editor.formatOnSave": true,
 		"editor.formatOnSaveMode": "file",
 		"editor.formatOnType": true,
-		"editor.codeActionsOnSave": {
-			"source.organizeImports": true
-		}
+		"files.autoSave": "afterDelay",
+		"java.format.settings.url": ".devcontainer/java-code-format-setting.xml",
+		"java.home": "/docker-java-home",
+		"terminal.integrated.shell.linux": "/bin/bash"
 	},
-	
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"vscjava.vscode-java-pack"
 	]
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "java -version",
-
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
 }

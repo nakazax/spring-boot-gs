@@ -31,11 +31,3 @@ hs_err_pid*
 
 # macOS
 .DS_Store
-
-# Azure Functions
-.factorypath
-
-azure-functions-core-tools/
-bin/
-local.settings.json
-obj/
